@@ -28,10 +28,8 @@ output_function <- function(data_type, target, data_path) {
     "csv" = write_csv(target, data_path),
     "dta" = write_dta(target, data_path),
     "feather" = write_feather(target, data_path),
-    "rds" = write_rds(target, data_path),
-    "sas7bdat" = write_sas(target, data_path),
-    "sav" = write_sav(target, data_path))
-
+    "rds" = write_rds(target, data_path)
+    )
 }
 
 ui <- fluidPage(
